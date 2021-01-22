@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage[backend=bibtex]{biblatex}
+\usepackage{amssymb}
+\usepackage{listings}
 \author{Fredrik Kortetjarvi \& Rohullah Khorami}
 \title{Exercise 1}
 \addbibresource{Exercise.bib}
@@ -16,8 +18,23 @@
         on the internet which was a programming contest. The program use functions to make a program to 
         draw graphics into a ppm file that is a picture.\cite{zucker}
     \section{}
-
-
+        The Key that Eve guessed indeed decrypts the cipher text to "LATER".
+        we checked the result in java program and on pen and paper. The program explaind in Task 4.\newline
+            \begin{math}
+            T=(x-k)mod26+65\newline
+            78-65=13=(x-84)mod26+65\Leftrightarrow T=78\rightarrow N , x=71 \rightarrow G\newline
+            69-65=4=(x-82)mod26+65\Leftrightarrow T=69\rightarrow E , x=86 \rightarrow V\newline
+            86-65=21=(x-84)mod26+65\Leftrightarrow T=86\rightarrow V , x=79 \rightarrow O\newline
+            69-65=4=(x-83)mod26+65\Leftrightarrow T=69\rightarrow E , x=87 \rightarrow W\newline
+            82-65=17=(x-72)mod26+65\Leftrightarrow T=82\rightarrow R , x=89 \rightarrow Y\newline
+            \end{math}\newline
+        Plain text = NEVER - 78 69 86 69 82\newline
+        Key = TRTSH - 84 82 84 83 72\newline
+        Cipher text = GVOWY - 71 86 79 87 89\newline
+    \section{}
+        \begin{lstlisting}[language=java]
+            
+        \end{lstlisting}
         \newpage
         \printbibliography
 \end{document}

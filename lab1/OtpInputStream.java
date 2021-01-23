@@ -10,7 +10,8 @@ public class OtpInputStream extends java.io.InputStream {
 	int pos = 0;
 	
 	/**
-	 * This method will encryption/decryption your messages in OTP or XOR encryption/decryption
+	 * This method will encryption/decryption 
+	 * your messages in OTP or XOR encryption/decryption
 	 * 
 	 * @param text send in a text to decrypt or encrypt
 	 * @param key send in the key to decrypt or encrypt
@@ -64,7 +65,8 @@ public class OtpInputStream extends java.io.InputStream {
 		pos=0;
 	}
 	/**
-	 * This method take the text to choose to encryption/decryption with XOR or OTP
+	 * This method take the text to choose to encryption/decryption
+	 *  with XOR or OTP
 	 * @param method select the method to encryption/decryption
 	 */
 	public void transform(int method) {
@@ -82,9 +84,10 @@ public class OtpInputStream extends java.io.InputStream {
 	}
 	/**
 	 * 
-	 * @param n is a number of character that should be encrypted/decryption
-	 * @return this program going to return random character which we use for
-	 *         encryption and decryption
+	 * @param n is a number of character that should 
+	 * be encrypted/decryption
+	 * @return this program going to return random 
+	 * character which we use for encryption and decryption
 	 */
 
 	public char[] random_char(int n) {

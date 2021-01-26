@@ -26,7 +26,25 @@
     \section{}
         The Key that Eve guessed indeed decrypts the cipher text to "LATER".
         we checked the result in java program and on pen and paper. The program explaind in Task 4.\newline
-            \begin{math}
+        \begin{math}
+        11=(x-84)mod26\Leftrightarrow T=11\rightarrow L , newkey=19 \rightarrow T\newline
+        0=(x-82)mod26\Leftrightarrow T=25\rightarrow Z , newkey=16 \rightarrow Q\newline
+        19=(x-84)mod26\Leftrightarrow T=21\rightarrow V , newkey=20 \rightarrow U\newline
+        4=(x-83)mod26\Leftrightarrow T=3\rightarrow D , newkey=17 \rightarrow R\newline
+        17=(x-72)mod26\Leftrightarrow T=18\rightarrow S , newkey=8 \rightarrow I\newline
+        \end{math}\newline
+
+        First attempt\newline
+        Plain Text = LZVDS - 11 25 21 3 18\newline
+        Key = TRTSH - 84 82 84 83 72\newline
+        Cipher Text = EQNVZ - 4 16 13 21 25\newline
+
+        Take out the key\newline
+        Plain text = LATER - 11 0 19 4 17\newline
+        Key = TQURI - 19 16 20 17 8\newline
+        Cipher Text = EQNVZ - 4 16 13 21 25\newline
+
+        \begin{math}
             T=(x-k)mod26+65\newline
             78-65=13=(x-84)mod26+65\Leftrightarrow T=78\rightarrow N , x=71 \rightarrow G\newline
             69-65=4=(x-82)mod26+65\Leftrightarrow T=69\rightarrow E , x=86 \rightarrow V\newline

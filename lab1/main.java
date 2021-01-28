@@ -6,7 +6,7 @@ public static void main(String[] arg) throws IOException {
 	char[] text = {'L','A','T','E','R'};
 	char[] key = {'T','R','T','S','H'};
 	int temp;
-	 OtpInputStream input = new OtpInputStream(text,key,3);
+	 OTPInputStream input = new OTPInputStream(text,key,3);
 	 do {
 		 temp = input.read();
 		 if(temp==-1) {}else {

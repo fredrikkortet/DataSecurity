@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex exercise1"] 1612959837 "exercise1.aux" "exercise1.bbl" "exercise1" 1612959860
+["bibtex exercise1"] 1612960984 "exercise1.aux" "exercise1.bbl" "exercise1" 1612960985
   "/usr/share/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1607188566 65407 92c6ecef324f045ffcac78ce2a7a8298 ""
-  "Exercise.bib" 1611660279 390 d0b386be8169f81754eb02f51b22c82f ""
-  "exercise1-blx.bib" 1612959860 340 f1540d3f2e89ae4d574255b13c3f0b0b "pdflatex"
-  "exercise1.aux" 1612959860 3046 84d991909c811f8737f7aaf60b0fea6c "pdflatex"
+  "Exercise.bib" 1612960958 691 cd6581ced0ad436160010cbf35f8776a ""
+  "exercise1-blx.bib" 1612960985 340 f1540d3f2e89ae4d574255b13c3f0b0b "pdflatex"
+  "exercise1.aux" 1612960985 3205 75ee673844ecae475da1a436542c9318 "pdflatex"
   (generated)
-  "exercise1.bbl"
   "exercise1.blg"
-["pdflatex"] 1612959859 "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.tex" "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.pdf" "exercise1" 1612959860
-  "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.aux" 1612959860 3046 84d991909c811f8737f7aaf60b0fea6c ""
-  "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.tex" 1612959859 7021 624f8af11e7928c80f87ff9c3b8e8d80 ""
+  "exercise1.bbl"
+["pdflatex"] 1612960984 "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.tex" "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.pdf" "exercise1" 1612960985
+  "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.aux" 1612960985 3205 75ee673844ecae475da1a436542c9318 ""
+  "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.tex" 1612960982 7031 91b25c0ce2213ba54779e4039ae69f32 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1607249373 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1607249373 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1607249373 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -93,17 +93,17 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1612352609 462052 923365791770b414ece8c75d1e50b948 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1612352606 2635858 b56d3ffad043c25872f265e55883d0ff ""
   "afg.png" 1611661468 1388160 45ba0a50efe481f0391c40ec4590db6b ""
-  "exercise1.aux" 1612959860 3046 84d991909c811f8737f7aaf60b0fea6c "pdflatex"
-  "exercise1.bbl" 1612959837 2069 8ce75c7f72df3a02a0fdf28ee43e0af1 "bibtex exercise1"
-  "exercise1.run.xml" 1612959860 2603 59a839fab798f4df3a7185ff2890ea06 "pdflatex"
-  "exercise1.tex" 1612959859 7021 624f8af11e7928c80f87ff9c3b8e8d80 ""
+  "exercise1.aux" 1612960985 3205 75ee673844ecae475da1a436542c9318 "pdflatex"
+  "exercise1.bbl" 1612960984 2825 5525ea844737ecada010b02c04695656 "bibtex exercise1"
+  "exercise1.run.xml" 1612960985 2603 59a839fab798f4df3a7185ff2890ea06 "pdflatex"
+  "exercise1.tex" 1612960982 7031 91b25c0ce2213ba54779e4039ae69f32 ""
   "image.jpg" 1611394205 47120 55f6c28d02dc2a4c451c2102b6ec59b3 ""
   "proof.jpg" 1612949851 46715 596a256014cfa0a6f921c66ba92691d9 ""
   (generated)
-  "exercise1-blx.bib"
-  "exercise1.run.xml"
   "exercise1.pdf"
   "exercise1.aux"
-  "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.pdf"
+  "exercise1.run.xml"
   "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.log"
+  "exercise1-blx.bib"
   "exercise1.log"
+  "/home/tipparn/Documents/school/data-security-DT4020/exercises/Exercise/lab1/exercise1.pdf"

@@ -59,6 +59,30 @@
     \field{year}{2020}
   \endentry
 
+  \entry{RSA}{article}{}
+    \name{author}{1}{}{%
+      {{hash=IDKD}{%
+         family={Ian\bibnamedelima Davies},
+         familyi={I\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={Keshav\bibnamedelima Dhandhania},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IDKD1}
+    \strng{fullhash}{IDKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{The RSA Encryption ALgorithm: A Comprehensive
+  Introduction(from Scratch) with Examples}
+    \verb{url}
+    \verb https://www.commonlounge.com/discussion/d27b7dc0a89348c7b95191781e445
+    \verb f0c
+    \endverb
+    \field{year}{2018}
+  \endentry
+
   \entry{zucker}{article}{}
     \name{author}{1}{}{%
       {{hash=ZM}{%

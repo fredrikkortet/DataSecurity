@@ -1,0 +1,68 @@
+type key.
+
+fun senc(bitstring, key): bitstring.
+
+reduc forall m: bitstring, k: key; sdec(senc(m, k), k) = m.
+
+type skey.
+type pkey.
+
+fun pk(skey): pkey.
+fun aenc(bitstring, pkey): bitstring.
+
+reduc forall m: bitstring, k: skey; adec(aenc(m, pk(k)), k) = m.
+
+type sskey.
+type spkey.
+
+fun spk(sskey): spkey.
+fun sign(bitstring, sskey): bitstring.
+
+reduc forall m: bitstring, k: sskey; getmess(sign(m, k)) = m.
+reduc forall m: bitstring, k: sskey; checksign(sign(m, k), spk(k)) = m.
+
+free c: channel.
+free s: bitstring [ private ].
+
+event aliceReceiveKey(key).
+event bobFreshKey(key).
+
+event aliceAccepts(key).
+event bobAccepts(key, pkey).
+event aliceTerm(key, pkey).
+event bobTerm(key).
+
+query attacker(s).
+query x: key; inj-event(aliceReceiveKey(x)) ==> inj-event(bobFreshKey(x)).
+query skx: key, pky: pkey; inj-event(aliceTerm(skx,pky)) ==> inj-event(bobAccepts(skx,pky)).
+query skx: key; inj-event(bobTerm(skx)) ==> inj-event(aliceAccepts(skx)).
+
+let alice(pkA: pkey, skA: skey, pkB: spkey) =
+  out(c, pkA);
+  new nonce: key;
+  out(c,nonce);
+  in(c, x: bitstring);
+  let sigB = adec(x, skA) in
+  let (nonceS:key, =pkA, =pkB, k: key) = checksign(sigB, pkB) in
+  if nonce = nonceS then
+    event aliceReceiveKey(k);
+    event aliceAccepts(k);
+    out(c, senc(s, k));
+    event aliceTerm(k, pkA).
+
+let bob(pkB: spkey, skB: sskey, pkA: pkey) =
+  in(c, pkX: pkey);
+  in(c, nonceS: key);
+  new k: key;
+  event bobFreshKey(k);
+  event bobAccepts(k, pkX);
+  out(c, aenc(sign((nonceS, pkX, pkB, k), skB), pkX));
+  in(c, x:bitstring);
+  let z = sdec(x, k) in 
+  if pkX = pkA then event bobTerm(k).
+
+process
+  new skA: skey; new skB: sskey;
+  let pkA = pk(skA) in out(c, pkA);
+  let pkB = spk(skB) in out(c, pkB);
+  ( (!alice(pkA, skA, pkB)) | (!bob(pkB, skB, pkA)) )
